@@ -11,7 +11,7 @@ class NearbyRes extends StatelessWidget {
     restaurants.forEach((Restaurant res){
       resList.add(
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0,),
+          margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 8.0,),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(15.0),
@@ -70,9 +70,10 @@ class NearbyRes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10.0),
+          padding: EdgeInsets.only(left: 20.0, top: 10.0),
           child: Text('Nearby Restaurants',
             style: TextStyle(
               fontSize: 20.0,

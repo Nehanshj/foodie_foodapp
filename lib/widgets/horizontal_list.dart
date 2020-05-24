@@ -10,7 +10,7 @@ class PastOrders extends StatelessWidget {
       width: 300,
       decoration: BoxDecoration(
         color: Colors.white70,
-        borderRadius: BorderRadius.circular(12.0),
+        borderRadius: BorderRadius.circular(15.0),
         border: Border.all(
           width: 1.0,
           color: Colors.grey[300],
@@ -88,13 +88,17 @@ class PastOrders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Text(
-          'Past Orders',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.w500,
-            letterSpacing: 1.3,
+        Padding(
+          padding: EdgeInsets.only(left: 20.0),
+          child: Text(
+            'Past Orders',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w500,
+              letterSpacing: 1.3,
+            ),
           ),
         ),
         Container(
