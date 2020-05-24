@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:foodie/data/data.dart';
 import 'package:foodie/widgets/horizontal_list.dart';
+import 'package:foodie/widgets/vertical_list.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -62,6 +63,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           PastOrders(),
+          NearbyRes(),
         ],
       ),
     );
